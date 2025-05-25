@@ -8,8 +8,7 @@ import axios from 'axios'
 // "export default () => {}" function below (which runs individually
 // for each client)
 const api = axios.create({
-  baseURL: 'http://54.207.91.242:80/api', headers: {
-    'Accept': 'application/json',
+  baseURL: 'http://localhost/api', headers: {
     'Content-Type': 'multipart/form-data'
   }
 });
