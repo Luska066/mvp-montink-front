@@ -1,6 +1,8 @@
 # mvp-front (mvp-front)
 
-Node 22.X
+## NODE VERSION
+
+  Node 22.X
 
 ## Install the dependencies
 ```bash
