@@ -7,7 +7,7 @@
 
 ## NODE VERSION
 
-  Node 22.X
+    Node 22.X
 
 ## Install the dependencies
 ```bash
