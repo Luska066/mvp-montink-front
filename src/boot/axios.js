@@ -8,10 +8,7 @@ import axios from 'axios'
 // "export default () => {}" function below (which runs individually
 // for each client)
 const api = axios.create({
-  baseURL: 'http://localhost/api', headers: {
-    'Content-Type': 'multipart/form-data'
-  }
-});
+  baseURL: 'http://localhost/api'});
 
 export default defineBoot(({app}) => {
   // for use inside Vue files (Options API) through this.$axios and this.$api
