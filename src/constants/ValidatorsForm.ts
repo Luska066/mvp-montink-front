@@ -34,7 +34,8 @@ const TOKEN = /^\d{4}-\d{4}$/;
 export const MASK_CNPJ = /^\d{2}\.\d{3}\.\d{3}\/\d{4}\-\d{2}$/;
 
 export const ValidatorsForm: ValidatorsType = {
-  required: (val: string) => (val && val.length > 0) || 'O campo é obrigatório',
+  required: (val: string) => (val?.length > 0) || 'O campo é obrigatório',
+  requiredNumber: (val: string) => (val > 0) || 'O campo tem que ser maior que 0',
   requiredFile: (val) => val != null || 'O campo é obrigatório',
   email: (val: string) => /.+@.+\..+/.test(val) || 'Email inválido',
   validateCpf: (val: string) => {
